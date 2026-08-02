@@ -31,9 +31,9 @@ const cakes = [
 export default function FeaturedCakes() {
   return (
     <section id="cakes" className="bg-primary/10 py-20 space-y-10 flex flex-col justify-center items-center">
-      <div>
+      <div className="space-y-2">
         <h1 className="text-4xl font-semibold capitalize text-center">our <span className="text-primary">featured</span> meals</h1>
-        <p className="text-sm text-neutral-600">Discover our most loved dishes that keep our customers coming back for more.</p>
+        <p className="text-neutral-600">Discover our most loved dishes that keep our customers coming back for more.</p>
       </div>
       <div className="grid grid-cols-3 gap-6">
         {
@@ -55,7 +55,7 @@ export default function FeaturedCakes() {
 
       </div>
       <div>
-        <button className="capitalize px-4 py-1 bg-primary text-white rounded-full text-lg cursor-pointer">check out full menu list <ArrowRight size={20} className="inline"></ArrowRight></button>
+        <button className="capitalize px-8 py-4 bg-primary text-white rounded-full text-lg cursor-pointer">check out full menu list <ArrowRight size={20} className="inline"></ArrowRight></button>
       </div>
     </section>
   );

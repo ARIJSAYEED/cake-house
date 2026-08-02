@@ -102,7 +102,7 @@ const features = [
 
 export default function WhyChooseMe() {
   return (
-    <section className="bg-white py-20">
+    <section className="bg-white py-20 border-black">
       <div className="mx-auto flex max-w-6xl flex-col gap-12 px-6 lg:flex-row lg:items-center lg:gap-20">
         <div className="max-w-md shrink-0">
           <p className="text-sm font-semibold uppercase tracking-widest text-primary">

@@ -1,37 +1,59 @@
 import Link from "next/link";
+import Logo from "../../Logo";
+
 
 export default function Footer() {
   return (
-    <footer className="border-t border-blush/30 bg-cream py-12">
-      <div className="mx-auto max-w-6xl px-6">
-        <div className="flex flex-col items-center justify-between gap-8 md:flex-row">
-          <div className="flex items-center gap-2">
-            <span className="flex h-8 w-8 items-center justify-center rounded-full bg-primary text-sm text-white">
-              🎂
-            </span>
-            <span className="text-lg font-semibold text-chocolate">
-              Cake House
-            </span>
+    <footer className="bg-black py-10 text-white">
+      <div className="max-w-6xl mx-auto">
+        <div className="grid grid-cols-3 border-b border-neutral-600 py-4">
+          <div>
+            <div>
+              <div>
+                <Logo></Logo>
+              </div>
+              <p>
+                Our job is to filling your tummy with delicious food and with
+                fast and free delivery.
+              </p>
+              <div>icons</div>
+            </div>
           </div>
-
-          <nav className="flex flex-wrap justify-center gap-6 text-sm text-chocolate/60">
-            <Link href="#cakes" className="hover:text-primary">
-              Menu
-            </Link>
-            <Link href="#about" className="hover:text-primary">
-              About
-            </Link>
-            <Link href="#how-it-works" className="hover:text-primary">
-              Delivery
-            </Link>
-            <Link href="#order" className="hover:text-primary">
-              Contact
-            </Link>
-          </nav>
-
-          <p className="text-sm text-chocolate/50">
-            © {new Date().getFullYear()} Cake House. Baked with love.
-          </p>
+          <div className="flex flex-col items-center">
+            <h1 className="text-primary">Quick Links</h1>
+            <ul>
+              <li>Home</li>
+              <li>About us</li>
+              <li>Service</li>
+              <li>Pricing</li>
+              <li>Contact us</li>
+              <li>Policies</li>
+            </ul>
+          </div>
+          <div className="flex flex-col items-end">
+            <div>
+              <h1 className="text-primary">Get in Touch</h1>
+              <div>
+                <p>Oxygen, Chattogram</p>
+              </div>
+              <div>
+                <p>+880-1974-87445</p>
+              </div>
+              <div>
+                <p>arijsayeed@gmail.com</p>
+              </div>
+              <div>24/7</div>
+            </div>
+          </div>
+        </div>
+        <div className="flex justify-between my-2 text-xs text-neutral-600">
+          <div>
+            <p>© 2025 Its My Kitchen. All rights reserved.</p>
+          </div>
+          <div className="flex gap-4">
+            <p>Privacy Policy</p>
+            <p>Terms of Service</p>
+          </div>
         </div>
       </div>
     </footer>

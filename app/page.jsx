@@ -4,7 +4,7 @@ import Footer from "./components/pages/home/Footer";
 import Hero from "./components/pages/home/Hero";
 import HowItWorks from "./components/pages/home/HowItWorks";
 import OrderCta from "./components/pages/home/OrderCta";
-import Testimonials from "./components/pages/home/Testimonials";
+import Reviews from "./components/pages/home/Reviews";
 import WhyChooseMe from "./components/pages/home/WhyChooseMe";
 
 
@@ -15,9 +15,9 @@ export default function Home() {
         <Hero />
         <WhyChooseMe />
         <FeaturedCakes />
-        <About />
+        {/* <About /> */}
         <HowItWorks />
-        <Testimonials />
+        <Reviews></Reviews>
         <OrderCta />
       </main>
       <Footer />

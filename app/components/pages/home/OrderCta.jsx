@@ -4,7 +4,7 @@ export default function OrderCta() {
   return (
     <section id="order" className="py-20">
       <div className="mx-auto max-w-4xl px-6">
-        <div className="relative overflow-hidden rounded-3xl bg-gradient-to-r from-primary to-chocolate px-8 py-16 text-center text-white shadow-2xl shadow-primary/20 sm:px-16">
+        <div className="relative overflow-hidden rounded-3xl bg-primary to-80% px-8 py-16 text-center text-white shadow-2xl shadow-primary/20 sm:px-16">
           <div className="absolute -right-10 -top-10 h-40 w-40 rounded-full bg-white/10 blur-2xl" />
           <div className="absolute -bottom-10 -left-10 h-40 w-40 rounded-full bg-gold/20 blur-2xl" />
 
