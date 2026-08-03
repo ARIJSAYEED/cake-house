@@ -18,7 +18,7 @@ export default function OrderCta() {
             </p>
             <div className="mt-8 flex flex-wrap justify-center gap-4">
               <Link
-                href="#cakes"
+                href="/orderForm"
                 className="rounded-full bg-white px-8 py-3.5 text-sm font-semibold text-chocolate transition hover:bg-cream"
               >
                 Start Your Order
