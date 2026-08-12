@@ -1,6 +1,8 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 import Header from "./Header";
+import { motion } from "motion/react";
 
 export default function Hero() {
   return (
@@ -27,15 +29,18 @@ export default function Hero() {
             <span className="text-primary">Lovingly Packed.</span>
           </h1>
           <p className="mt-6 max-w-lg text-lg leading-relaxed text-white/80">
-            Experience the authentic taste of home-cooked meals delivered right to your doorstep in Oshawa. Healthy, delicious, and made with love.
+            Experience the authentic taste of home-cooked meals delivered right
+            to your doorstep in Oshawa. Healthy, delicious, and made with love.
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
-            <Link
-              href="#cakes"
-              className="rounded-full bg-primary px-8 py-3.5 text-sm font-semibold text-white shadow-lg shadow-primary/25 transition hover:bg-primary/90"
+            <motion.button
+              whileHover={{ scale: 1.1 }}
+              transition={{ duration: 0.01 }}
+              whileTap={{ scale: 0.8 }}
+              className="rounded-full bg-primary px-8 py-3.5 text-sm font-semibold text-white shadow-lg shadow-primary/25 transition"
             >
-              Browse Our Cakes
-            </Link>
+              <Link href="#cakes">Browse Our Cakes</Link>
+            </motion.button>
           </div>
           {/* <dl className="mt-12 grid grid-cols-3 gap-6 border-t border-white/20 pt-8">
             <div>
