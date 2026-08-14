@@ -34,8 +34,8 @@ export default function Hero() {
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
             <motion.button
-              whileHover={{ scale: 1.1 }}
-              transition={{ duration: 0.01 }}
+              whileHover={{ scale: 1.2 }}
+              transition={{ duration: 0.3 }}
               whileTap={{ scale: 0.8 }}
               className="rounded-full bg-primary px-8 py-3.5 text-sm font-semibold text-white shadow-lg shadow-primary/25 transition"
             >
